@@ -7,11 +7,13 @@
   <title>New Profile</title>
   <link rel="stylesheet" href="/styles/base.css">
   <link rel="stylesheet" href="/styles/profiles.css">
+  <script src="/scripts/file-preview.js" defer></script>
 </head>
 <body>
   <main id="new-user">
     <form action="/profiles" method="POST" enctype="multipart/form-data">
       <div class="form-control">
+        <img id="image-preview" src="" alt="Your picked image">
         <label for="username">Username</label>
         <input type="text" id="username" name="username" required>
       </div>
